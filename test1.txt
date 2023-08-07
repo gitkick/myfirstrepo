@@ -1,1 +1,7 @@
-one
+resource random_string str_name_gen {
+  length = 22
+}
+
+output stringer{
+  value = random_string.str_name_gen.result
+}
